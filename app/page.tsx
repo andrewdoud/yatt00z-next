@@ -10,16 +10,16 @@ const Star = dynamic(
 export default function Home() {
     return (
         <main className="relative h-screen w-screen justify-center align-">
-            <div className="menu-wrapper">
+            <div className="menu-wrapper noise-bg">
                 {/* welcome to yatt00z site */}
                 {/* <Button>yatt00z</Button> */}
                 <button className="logo">
                 <Image
-                    className=""
+                    className="noise"
                     src="/yatt00z-logo.svg"
                     alt="yatt00z Logo"
-                    width={120}
-                    height={72}
+                    width={240}
+                    height={144}
                     priority
                 />
                 </button>

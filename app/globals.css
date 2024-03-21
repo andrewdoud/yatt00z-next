@@ -26,6 +26,7 @@
     z-index: 10;
     align-items: center;
     gap: 10px;
+    pointer-events: none;
 }
 
 .menu-button {
@@ -45,6 +46,7 @@
     border-width: 1px;
     transition: all 0.1s ease-out;
     mix-blend-mode: difference;
+    pointer-events: auto;
 }
 .menu-button:hover {
     background-color: white;
@@ -52,8 +54,27 @@
 }
 
 .logo {
-    mix-blend-mode: difference;
+    mask-image: radial-gradient(rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 70%);
+    pointer-events: auto;
     /* opacity: 20%; */
+}
+
+.noise {
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    /* background: 
+        radial-gradient(red, transparent), 
+        url(https://grainy-gradients.vercel.app/noise.svg);
+    filter: contrast(170%) brightness(1000%);   */
+}
+
+.noise-bg {
+    background: 
+        linear-gradient(to right, white, transparent),
+        url(https://grainy-gradients.vercel.app/noise.svg);
+    backdrop-filter: contrast(170%) brightness(100%);
 }
 
 /* body {
